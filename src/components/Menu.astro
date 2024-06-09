@@ -1,0 +1,19 @@
+---
+const items = [
+  { name: "Cursos", link: "/courses/" },
+  { name: "Projetos", link: "/projects/" },
+  { name: "Sobre", link: "/about/" },
+  //   { name: "teste", link: "teste" },
+  //   { name: "teste", link: "teste" },
+];
+---
+
+<main>
+  {
+    items.map((item) => (
+      <div>
+        <a href={item.link}>{item.name}</a>
+      </div>
+    ))
+  }
+</main>
